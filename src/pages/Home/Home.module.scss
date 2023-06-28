@@ -1,0 +1,109 @@
+@import "src/assets/colors";	
+	
+	.modalActive {
+	background: rgba(38, 34, 47, 0.5);
+	}
+	
+	.pagesContainer {
+	margin: 72px 0;
+	display: flex;
+	padding: 0;
+	}
+	.pageNumber {
+	list-style-type: none;
+	margin-right: 8px;
+	display: flex;
+	width: 28px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	color: #53607a;
+	outline: none;
+	user-select: none;
+	&:hover {
+	cursor: pointer;
+	background-color: $Primary-secondary;
+	color: $White;
+	}
+	}
+	
+	.linkPage {
+	padding: 4px;
+	outline: none;
+	&:focus {
+	outline: none;
+	}
+	}
+	.activePageNumber {
+	box-sizing: border-box;
+	border: 1px solid $Primary;
+	color: $Primary;
+	}
+	
+.arrowButton {
+	align-items: flex-start;
+	list-style-type: none;
+	padding: 4px;
+	border-radius: 4px;
+	user-select: none;
+	&:hover {
+	  svg > path {
+		fill: $White;
+	  }
+	  background-color: $Primary-secondary;
+	  cursor: pointer;
+	}
+	&:first-child {
+	  margin-right: auto;
+	}
+	&:last-child {
+	  margin-left: auto;
+	  a > svg {
+		transform: rotate(180deg);
+	  }
+	}
+  }
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+    top: 84px;
+	width: 200px;
+	height: 30px;
+}
+
+
+.orderButton:first-child {
+	background-color: $Error;
+	border-radius: 0 0 0 15px;
+}
+
+.orderButton:last-child {
+	border-radius: 0 0 15px 0;
+	background-color: $Error;
+	border-left: 1px solid black;
+}
+
+.activStylesBtn {
+	@keyframes change-background {
+        0% {
+          background-color: #000000;
+		  color: #fff6f6;
+        }
+        50% {
+          background-color: #d8d8d8;
+		  color: #000000;
+        }
+        100% {
+          background-color: #000000;
+		  color: #fff6f6;
+        }
+      }
+      height: 100%;
+      width: 100%;
+	  margin: 0;
+      padding: 0;
+      animation: change-background 0.3s ease infinite;
+}

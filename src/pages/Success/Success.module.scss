@@ -1,0 +1,22 @@
+@import "./src/assets/colors";
+.darkWrapper {
+    background-color: $Secondary;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 544px;
+}
+
+.successText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $Secondary;
+}
+
+.darkSuccessText {
+    color: $White;
+}

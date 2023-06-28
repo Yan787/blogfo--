@@ -1,0 +1,51 @@
+@import "./src/assets/colors";
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+.forgotPass {
+    margin-top: 16px;
+}
+
+.darkforgotPass{
+    color: $White;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $Gray;
+}
+
+.darkSignUp {
+    color: $Medium;
+}
+
+.link {
+    color: $Primary;
+    text-decoration: none;
+}
+
+.darkLink {
+    color: $Primary-secondary;
+}
+
+.darkWrapper {
+    background-color: $Secondary;
+}
+

@@ -1,0 +1,134 @@
+@import "./src/assets/colors";
+
+.container {
+    max-width: 1120px;
+}
+
+.navigation {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.nav {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav:first-child {
+    padding: 0 11px 0 0;
+    color: $Secondary;
+    border-right: 2px solid $Gray;
+    cursor: pointer;
+}
+
+.nav:last-child {
+    color: $Gray;
+}
+
+
+.wrapperImge {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+}
+.imge {
+    display: flex;
+    width: 992px;
+    height: 518px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.wrapperText {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $Secondary;
+    max-width: 920px;
+}
+
+.buttons {
+    max-width: 920px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.wrapperBtn {
+    display: flex;
+    gap: 6px;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.border {
+    margin-top: 72px;
+    border-bottom: 1px solid $Medium;
+    max-width: 1120px;
+}
+
+.darkContainer {
+    background-color: $Secondary;
+}
+
+.darkText {
+    color: $White;
+}
+
+.darkNav:first-child  {
+    color: $White;
+  }
+
+.darkNav:last-child  {
+    color: $Gray;
+}
+
+.darkBorder {
+    border-bottom: 1px solid $Gray;
+}
+
+.like {
+    background-color: rgb(156, 255, 200);
+        &:hover{
+            background-color: rgb(156, 255, 200);
+        }
+}
+
+.dislike {
+    background-color: rgb(253, 154, 154);
+        &:hover{
+            background-color: rgb(253, 154, 154);
+        }
+}
+
+.btnHome {
+    color: $Secondary;
+    text-decoration: none;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+}
+
+.darkTitle {
+    color: $White;
+}
+
+.darkBtnHome {
+    color: $White;
+}

@@ -1,0 +1,40 @@
+@import "./src/assets/colors";
+
+.container {
+    display: 1;
+    height: 100%;
+    flex-direction: column;
+    background-color: $Extra-light;
+    overflow: scroll;
+}
+
+.darkContainer {
+    flex: 1;
+    background-color: $Secondary;
+    transition: all 1s;
+}
+
+.lightContainer {
+    transition: all 1s;
+}
+
+.mainInfo {
+    flex: 1;
+    padding-left: 293px;
+    padding-right: 293px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 156px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 33px 0;
+    border-top: 1px solid $Gray;
+    div {
+        color: $Gray;
+    }
+}

@@ -1,0 +1,101 @@
+@import "./src/assets/colors";
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 84px;
+    top: 0;
+    width: 100%;
+    background-color: $Primary;
+}
+
+.infoContainer {
+    display: flex;
+}
+
+.imput {
+    min-height: 84px;
+    background-color: $Primary-secondary !important;
+    color: $White;
+    width: 1296.4px !important;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.5)
+    }
+}
+
+.searchIcon {
+    background: $Primary;
+    border-left: 1px solid $Primary-secondary;
+}
+
+.imputLoggedIn {
+    min-width: 1443.7px !important;
+}
+
+.searchIconColor {
+    border-left: 1px solid $Primary-secondary;
+    &:hover {
+        background: $Primary  !important;
+    }
+}
+
+.border {
+    border: 1px solid $Primary-secondary !important;
+
+}
+
+.mainContainer {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    background-color: $White;
+    width: 236px;
+    height: calc(100% - 84px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.authButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.actionsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.navButton {
+    height: 83px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid $Light;
+    color: $Secondary;
+    &:hover {
+        color: $Primary;
+    }
+}
+
+.activeNavButton {
+    color: $Primary;
+}
+
+.userName {
+    border-left: 1px solid $Primary-secondary;
+}
+
+.menuUser {
+    border-top: 1px solid $Primary-secondary;
+}

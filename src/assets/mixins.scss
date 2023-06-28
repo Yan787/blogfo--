@@ -1,0 +1,23 @@
+@import "./src/assets/colors";
+
+@mixin button {
+    border-radius: 2px;
+    padding: 16px 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px; 
+    line-height: 24px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $Secondary;
+    margin-bottom: 8px;
+}

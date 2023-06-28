@@ -1,0 +1,45 @@
+@import "./src/assets/colors";
+
+.container {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.darkContiner {
+    svg > path {
+        transition: all 2s;
+        fill: $Primary-secondary;
+    }
+    .title {
+        transition: all 1s;
+        color: $White;
+    }
+}
+
+.lightContiner {
+    svg > path {
+        fill: rgb(255, 0, 0);
+        transition: all 2s;
+    }
+    .title {
+        transition: all 1s;
+    } 
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $Secondary;
+    margin-top: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: $Gray;
+    margin-top: 8px;
+    margin-bottom: 120px;
+}

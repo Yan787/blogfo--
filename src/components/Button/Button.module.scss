@@ -1,0 +1,40 @@
+@import "src/assets/mixins";
+@import "src/assets/colors";
+
+.PrimaryButton {
+    @include button;
+    background-color: $Primary;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: $Primary-secondary;
+    }
+}
+
+.SecondaryButton {
+    @include button;
+    background-color: $Light;
+    color: $Secondary;
+    &:hover {
+        background-color: $Medium;
+    }
+}
+
+.ErrerButton {
+    @include button;
+    color: $Error;
+    &:hover {
+        border-color: $Medium;
+    }
+}
+
+.disabledButton {
+    background-color: $Light;
+    color: $Gray;
+    &:hover {
+        background-color: $Light;
+        cursor: not-allowed;
+    }
+}

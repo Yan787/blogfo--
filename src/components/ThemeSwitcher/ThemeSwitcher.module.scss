@@ -1,0 +1,31 @@
+@import "./src/assets/colors";
+.container {
+    display: flex;
+    border-bottom: 1px solid $Light;
+    border-top: 1px solid $Light;
+    background-color: $White;
+    cursor: pointer
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    height: 80px;
+    box-sizing: border-box;
+    &:first-child {
+        border-right: 1px solid $Light;
+    }
+    &:hover {
+        svg > path {
+            fill: $Secondary;
+        }
+    }
+}
+
+.activeButton {
+    svg > path {
+        fill: $Secondary;
+    }
+}

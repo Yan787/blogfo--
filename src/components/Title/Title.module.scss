@@ -1,0 +1,15 @@
+@import "./src/assets/colors";
+.h1 {
+    margin-bottom: 48px;
+    font-size: 56px;
+    color: $Secondary;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    transition: all 1s;
+}
+
+.darkTitle {
+    transition: all 1s;
+    color: $White;
+}

@@ -1,0 +1,30 @@
+@import "./src/assets/colors";
+.modalComtainer {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(8, 7, 7, 0.766);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: $White;
+}
+
+.closeIcon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 17px 21px 45px;
+    cursor: pointer;
+}
+
+.infoComtainer {
+    padding: 0 77px 54px 73px;
+}
+

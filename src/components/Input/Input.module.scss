@@ -1,0 +1,63 @@
+@import "./src/assets/colors";
+@import "./src/assets/mixins";
+
+.title {
+   @include title
+}
+
+.input {
+    width: 544px;
+    height: 56px;
+    border-radius: 2px;
+    border: 0;
+    background-color: $White;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+     &:focus {
+        outline: 2px solid $Medium;
+   }
+}
+
+.disabled {
+    background-color: $Light;
+    color: $Gray;
+    &:hover {
+        cursor: not-allowed;
+    }
+}
+
+.errorText {
+    border: 2px solid $Error;
+
+    &:hover {
+        outline: 0;
+    }
+}
+
+.err {
+
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $Error;
+       &:focus {
+        outline: 0;
+   }
+
+}
+
+.darkTitle {
+    color: $White;
+}
+
+.validText {
+    color: $Error;
+}
+
+.darkText {
+    color: $White;
+}
